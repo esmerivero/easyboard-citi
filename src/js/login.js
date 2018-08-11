@@ -47,10 +47,8 @@ function valitator(provider) {
     });
 }
 
-
-function authGoogle() {
-let provider = new firebase.auth.GoogleAuthProvider();
-valitator(provider);
+function goToKanban() {
+    window.location.href = 'views/kanban.html';
 }
 
 
@@ -58,4 +56,5 @@ valitator(provider);
 const google = document.getElementById('btn-google');
     google.addEventListener('click', (event) => {
         authGoogle();
+        // goToKanban();
 });

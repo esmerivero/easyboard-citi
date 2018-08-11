@@ -20,7 +20,7 @@ function dragStart() {
 
 function dragEnd() {
   console.log('end');
-  this.className = 'fill'; //comment 
+  this.className = 'fill'; //comment
 }
 
 function dragOver(e) {
