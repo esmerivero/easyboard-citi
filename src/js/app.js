@@ -1,21 +1,23 @@
-function creatTabla(){
-  miTabla = document.createElement("table");
-  miTabla.setAttribute("id", "miTabla");
-  miTabla.align = "center";
+function initialization() {
+    const config = {
+      apiKey: 'AIzaSyCjN9x4Q4B8Nx5xf1ZoKLpWn4mTPiuuC3c',
+      authDomain: 'red-social-19985.firebaseapp.com',
+      databaseURL: 'https://red-social-19985.firebaseio.com',
+      projectId: 'red-social-19985',
+      storageBucket: 'red-social-19985.appspot.com',
+      messagingSenderId: '169924096887'
+    };
+    firebase.initializeApp(config);
+}
 
-  f = 5;
-  c = 5;
+let  auth = initialization();
+const btnLogout = document.getElementById('btn-logout');
 
-  for(let i=0; i<f; i++) {
-      tr = document.createElement("tr");
+btnLogout.addEventListener('click', function() {
+    firebase.auth().signOut().then(function() {
+      window.location.href = '../index.html';
+    }).catch(function(error) {
+      console.log(error);
+    });
+  });
 
-      for(let j=0; j<c; j++) {
-          td = document.createElement("input");
-          td.setAttribute("type", "text");
-          td.setAttribute("placeholder", i+","+j);
-          tr.appendChild(td);
-      }
-      miTabla.appendChild(tr);
-  }
-
-  document.body.appendChild(miTabla);
