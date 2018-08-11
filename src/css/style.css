@@ -1,0 +1,22 @@
+body {
+    background: darksalmon;
+}
+
+.fill{
+    background-image: url('https://i.pinimg.com/originals/6a/2a/ef/6a2aef51241f73716a5b5d4af64bd5cd.jpg');
+    position: relavite;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.empty{
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: 3px salmon solid;
+    background-color: white;
+}
