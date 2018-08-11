@@ -42,9 +42,7 @@ body {
     font-size: 26px bold;
   }
 
-  #logGoogle{
-   height: 3.5em;
-   width: 3.5em;
-   margin-bottom: 7px;
-   margin-right: 4%;
+  .gLogo{
+   height: 5%;
+   width: 5%;
 }
