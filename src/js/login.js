@@ -51,5 +51,5 @@ function goToKanban() {
 const google = document.getElementById('logGoogle');
     google.addEventListener('click', (event) => {
         authGoogle();
-        // goToKanban();
+        goToKanban();
 });

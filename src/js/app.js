@@ -20,3 +20,4 @@ btnLogout.addEventListener('click', function() {
       console.log(error);
     });
   });
+
