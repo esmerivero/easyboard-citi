@@ -28,3 +28,14 @@ body {
   .invisible {
     display: none;
   }
+
+  #btn-logout {
+    margin-left: 80%;
+    border: none;
+    background-color: #ffffff
+    display: inline-block;
+  }
+
+  .negroEspacial{
+    background-color: #414a4c
+   }
