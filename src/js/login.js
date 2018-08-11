@@ -48,7 +48,7 @@ function goToKanban() {
     window.location.href = 'views/kanban.html';
 }
 
-const google = document.getElementById('btn-google');
+const google = document.getElementById('logGoogle');
     google.addEventListener('click', (event) => {
         authGoogle();
         // goToKanban();
