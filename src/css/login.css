@@ -16,7 +16,7 @@ body {
     height: auto;
     margin-top: 9%;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 248, 248, 0.19);
+    box-shadow: 3px 6px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 248, 248, 0.19);
     display: block;
   }
   
@@ -42,9 +42,7 @@ body {
     font-size: 26px bold;
   }
 
-  #logGoogle{
-   height: 4%;
-   width: 7%;
-   margin-bottom: 7px;
-   margin-right: 4%;
+  .gLogo{
+   height: 5%;
+   width: 5%;
 }
