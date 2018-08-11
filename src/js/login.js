@@ -1,4 +1,4 @@
-function initialization() {
+const initialization = () => {
     const config = {
       apiKey: 'AIzaSyCjN9x4Q4B8Nx5xf1ZoKLpWn4mTPiuuC3c',
       authDomain: 'red-social-19985.firebaseapp.com',
@@ -7,10 +7,18 @@ function initialization() {
       storageBucket: 'red-social-19985.appspot.com',
       messagingSenderId: '169924096887'
     };
-        
+
     firebase.initializeApp(config);
+    console.log(firebase);
+    const db = firebase.firestore();
+    return (db);
 }
-let  auth = initialization();
+let  DB = initialization();
+function goToKanban() {
+    alert('hola');
+    // window.location.href('/views/kanban.html');
+}
+
 
  function observador() {
     firebase.auth().onAuthStateChanged(function(user) {
@@ -21,16 +29,11 @@ let  auth = initialization();
       }
     });
 }
-
-function authGoogle() {
-let provider = new firebase.auth.GoogleAuthProvider();
-valitator(provider);
-}
-
 function valitator(provider) {
     firebase.auth().signInWithPopup(provider).then(function(result) {
       var token = result.credential.accessToken;
       var user = result.user;
+      console.log("success");
       observador();
     }).catch(function(error) {
       var errorCode = error.code;
@@ -40,14 +43,17 @@ function valitator(provider) {
       console.log(errorCode);
       console.log(errorMessage);
       console.log(email);
-      console.log(credential);  
+      console.log(credential);
     });
 }
 
-function goToKanban() {
-    alert('hola');
-    // window.location.href('/views/kanban.html');
+
+function authGoogle() {
+let provider = new firebase.auth.GoogleAuthProvider();
+valitator(provider);
 }
+
+
 
 const google = document.getElementById('btn-google');
     google.addEventListener('click', (event) => {
