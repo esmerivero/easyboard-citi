@@ -45,11 +45,11 @@ function valitator(provider) {
 }
 
 function goToKanban() {
-    alert('hola');
-    // window.location.href('/views/kanban.html');
+    window.location.href = 'views/kanban.html';
 }
 
 const google = document.getElementById('btn-google');
     google.addEventListener('click', (event) => {
         authGoogle();
+        // goToKanban();
 });
