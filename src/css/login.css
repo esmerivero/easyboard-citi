@@ -1,0 +1,50 @@
+body {
+    max-width: 100%;
+    background-color: #ffe521;
+  }
+  
+  #img-logo{
+      width: 35%;
+      height: 100%;
+  }
+  .wrapper {
+    width: 50%;
+    max-width: 500px;
+    min-width: 60%;
+    margin: auto;
+    padding: 30px;
+    height: auto;
+    margin-top: 9%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 248, 248, 0.19);
+    display: block;
+  }
+  
+  input[type=email] {
+    width: 100%;
+    padding: 6px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+  }
+  
+  input[type=password] {
+    width: 100%;
+    padding: 6px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+  }
+  
+  #login-button {
+    float: right;
+  }
+  
+  form {
+    font-size: 26px bold;
+  }
+
+  #logGoogle{
+   height: 4%;
+   width: 7%;
+   margin-bottom: 7px;
+   margin-right: 4%;
+}
